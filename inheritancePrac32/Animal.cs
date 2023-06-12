@@ -15,7 +15,7 @@ namespace InheritancePrac32
             this.Age = age;
         }
 
-        public void Eat()
+        public virtual void Eat()
         {
             Console.WriteLine("냠냠 먹습니다.");
         }
