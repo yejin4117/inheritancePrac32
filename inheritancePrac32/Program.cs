@@ -21,7 +21,20 @@ namespace InheritancePrac32
             {
                 item.Eat();
                 item.Sleep();
-                //((Dog) item).Bark();
+                var _dog = item as Dog;
+                if (_dog != null) { _dog.Bark(); }
+
+                var _cat = item as Cat;
+                if (_cat != null) { _cat.Meow(); }
+
+                if (item is Dog)
+                {
+                    ((Dog)item).Bark();
+                }
+                else if (item is Cat)
+                {
+                    ((Cat)item).Meow();
+                }
             }
         }
     }
